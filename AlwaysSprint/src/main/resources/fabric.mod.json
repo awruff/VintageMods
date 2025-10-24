@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "alwayssprint",
+  "version": "1.0.0",
+  "authors": [
+    "awruff"
+  ],
+  "environment": "CLIENT",
+  "entrypoints": {
+    "mod": [
+      {
+        "value": "com.github.awruff.vintage.alwayssprint.AlwaysSprint"
+      }
+    ]
+  },
+  "mixins": [
+    "mixins.alwayssprint.json"
+  ],
+  "depends": {
+    "minecraft": "1.7.10",
+    "fabricloader": "0.17.3"
+  }
+}
