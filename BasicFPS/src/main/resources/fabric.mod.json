@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "id": "basicfps",
-  "version": "1.0.0",
+  "id": "${id}",
+  "name": "${name}",
+  "version": "${version}",
   "authors": [
     "awruff"
   ],

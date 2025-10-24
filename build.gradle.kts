@@ -7,8 +7,6 @@ subprojects {
     apply(plugin = "java")
     apply(plugin = "xyz.wagyourtail.unimined")
 
-    unimined.useGlobalCache = false
-
     unimined.minecraft {
         version("1.7.10")
 
@@ -28,6 +26,18 @@ subprojects {
 
         toolchain {
             languageVersion.set(JavaLanguageVersion.of(8))
+        }
+    }
+
+    tasks {
+        processResources {
+            filesMatching("fabric.mod.json") {
+                expand(mapOf(
+                    "id" to project.properties["mod.id"].toString(),
+                    "name" to project.properties["mod.name"].toString(),
+                    "version" to project.properties["mod.version"].toString()
+                ))
+            }
         }
     }
 }
