@@ -2,6 +2,10 @@ plugins {
     id("xyz.wagyourtail.unimined") version "1.4.1"
 }
 
+// No need to build an empty jar...
+tasks.withType<Jar>().configureEach {
+    enabled = false
+}
 
 subprojects {
     apply(plugin = "java")
@@ -30,6 +34,11 @@ subprojects {
     }
 
     tasks {
+        // Moves built jars into the root build directory
+        jar {
+            destinationDirectory.set(rootProject.layout.buildDirectory)
+        }
+
         processResources {
             filesMatching("fabric.mod.json") {
                 expand(mapOf(
