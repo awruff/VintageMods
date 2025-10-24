@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "basicfps",
+  "version": "1.0.0",
+  "authors": [
+    "awruff"
+  ],
+  "environment": "CLIENT",
+  "entrypoints": {
+    "mod": [
+      {
+        "value": "com.github.awruff.vintage.basicfps.BasicFPS"
+      }
+    ]
+  },
+  "mixins": [
+    "mixins.basicfps.json"
+  ],
+  "depends": {
+    "minecraft": "1.7.10",
+    "fabricloader": "0.17.3"
+  }
+}
