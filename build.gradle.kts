@@ -11,6 +11,8 @@ subprojects {
     apply(plugin = "java")
     apply(plugin = "xyz.wagyourtail.unimined")
 
+    unimined.useGlobalCache = false
+
     unimined.minecraft {
         version("1.7.10")
 

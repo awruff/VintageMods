@@ -9,4 +9,7 @@ pluginManagement {
 
 rootProject.name = "VintageMods"
 
-include("AlwaysSprint", "BasicFPS")
+include(
+    "AlwaysSprint",
+    "BasicFPS"
+)
