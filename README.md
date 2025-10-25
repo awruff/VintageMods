@@ -3,9 +3,14 @@ A collection of mods for 1.7.10... Focused on PvP.
 
 ---
 
-## Mods
-- Always Sprint
+## Index
+
+### HUD
+- Basic CPS
 - Basic FPS
+
+### Utility
+- Always Sprint
 
 ---
 
