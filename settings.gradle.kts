@@ -11,5 +11,6 @@ rootProject.name = "VintageMods"
 
 include(
     "AlwaysSprint",
+    "BasicCPS",
     "BasicFPS"
 )

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "${id}",
+  "name": "${name}",
+  "version": "${version}",
+  "authors": [
+    "awruff"
+  ],
+  "environment": "CLIENT",
+  "entrypoints": {
+    "mod": [
+      {
+        "value": "com.github.awruff.vintage.basiccps.BasicCPS"
+      }
+    ]
+  },
+  "mixins": [
+    "mixins.basiccps.json"
+  ],
+  "depends": {
+    "minecraft": "1.7.10",
+    "fabricloader": "0.17.3"
+  }
+}
