@@ -15,6 +15,7 @@ subprojects {
 
     unimined.minecraft {
         version("1.7.10")
+        side("client")
 
         mappings {
             calamus()
@@ -36,8 +37,8 @@ subprojects {
     }
 
     tasks {
-        // Moves built jars into the root build directory
-        jar {
+        // Moves production jars into the root build directory
+        named<Jar>("remapJar") {
             destinationDirectory.set(rootProject.layout.buildDirectory)
         }
 
@@ -46,7 +47,7 @@ subprojects {
                 expand(mapOf(
                     "id" to project.properties["mod.id"].toString(),
                     "name" to project.properties["mod.name"].toString(),
-                    "version" to project.properties["mod.version"].toString()
+                    "version" to project.properties["mod.version"].toString(),
                 ))
             }
         }

@@ -12,5 +12,6 @@ rootProject.name = "VintageMods"
 include(
     "AlwaysSprint",
     "BasicCPS",
-    "BasicFPS"
+    "BasicFPS",
+    "PotionStatus"
 )

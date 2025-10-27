@@ -6,7 +6,7 @@
   "authors": [
     "awruff"
   ],
-  "environment": "CLIENT",
+  "environment": "client",
   "entrypoints": {
     "mod": [
       {

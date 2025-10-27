@@ -7,15 +7,8 @@
     "awruff"
   ],
   "environment": "client",
-  "entrypoints": {
-    "mod": [
-      {
-        "value": "com.github.awruff.vintage.alwayssprint.AlwaysSprint"
-      }
-    ]
-  },
   "mixins": [
-    "mixins.alwayssprint.json"
+    "mixins.potionstatus.json"
   ],
   "depends": {
     "minecraft": "1.7.10",
